@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finanzas Pro: La enciclopedia financiera líder. Calculadoras de sueldo neto 2026, hipotecas, interés compuesto y simulador de pánico bursátil. Educación para la libertad financiera.">
+    <meta name="keywords" content="finanzas personales, libertad financiera, calculadora sueldo neto 2026, euribor hoy, ahorro, inversion, interes compuesto">
+    <title>Finanzas Pro | Enciclopedia Maestra y Terminal de Ingeniería Financiera</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lexend:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Finanzas Pro",
+      "description": "Herramientas de cálculo financiero y diccionario masivo de economía.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Finanzas Pro Team"
+      }
+    }
+    </script>
+
+    <meta property="og:title" content="Finanzas Pro | El Monstruo de las Finanzas">
+    <meta property="og:description" content="Domina tu dinero con 65 conceptos y herramientas de precisión.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0F172A">
+</head>
+<body>
+
+    <nav class="glass-nav">
+		<div class="nav-container">
+			<a href="#" class="logo">
+				<span class="logo-icon">💎</span> Finanzas<span class="logo-bold">Pro</span>
+			</a>
+			
+			<div class="search-system">
+				<input type="text" id="masterSearch" placeholder="🔍 Buscar..." onkeyup="smartSearch()">
+				<div id="search-dropdown" class="search-dropdown"></div>
+			</div>
+
+			<button class="menu-btn" id="mobile-menu-btn">☰</button>
+			
+			<div class="nav-links" id="main-nav">
+				<a href="#diccionario">Diccionario</a>
+				<a href="#calculadoras">Terminal</a>
+				<a href="#contacto">🚀 Buzón</a>
+				
+				<a href="https://www.instagram.com/estebannvr__" target="_blank" class="nav-insta" title="Síguenos en Instagram">
+					<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+				</a>
+
+				<button class="theme-toggle" onclick="toggleTheme()" id="theme-icon">🌙</button>
+			</div>
+		</div>
+	</nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="badge-pro">Actualizado: Marzo 2026</span>
+                <h1>Ingeniería de Capital para la <span>Libertad</span> Real</h1>
+                <p>Bienvenido a la plataforma independiente de educación financiera más potente. Sin sesgos bancarios, solo matemáticas, datos históricos y conceptos explicados para el mundo real.</p>
+                <div class="hero-buttons">
+                    <a href="#calculadoras" class="btn-main">Abrir Terminal de Cálculo</a>
+                    <a href="#diccionario" class="btn-ghost">Explorar Enciclopedia</a>
+					<a href="https://www.instagram.com/estebannvr__" class="btn-insta-top" target="_blank" rel="noopener">
+					<span class="insta-icon">📸</span> Síguenos en Instagram </a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <div class="floating-stats">
+                    <div class="stat-card"><strong>65+</strong><span>Términos</span></div>
+                    <div class="stat-card"><strong>7</strong><span>Herramientas</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="roadmap" class="massive-section">
+            <div class="section-title">
+                <h2 class="grad-text">La Ruta hacia la Independencia</h2>
+                <p>No se trata de suerte, se trata de sistema. Sigue estos 7 pasos para blindar tu futuro.</p>
+            </div>
+            <div class="roadmap-grid">
+                <article class="step-card">
+                    <span class="step-num">01</span>
+                    <h3>Control de Flujo</h3>
+                    <p>Audita cada euro que entra y sale. La brecha entre ingresos y gastos es tu primera victoria.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">02</span>
+                    <h3>Fondo de Paz</h3>
+                    <p>Construye un colchón de 6 meses. Este dinero no es para gastar, es para comprar tu tranquilidad.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">03</span>
+                    <h3>Matar Deuda Mala</h3>
+                    <p>Elimina tarjetas y préstamos de consumo (>6% TAE). Es la inversión con el retorno más seguro del mundo.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">04</span>
+                    <h3>Protección</h3>
+                    <p>Asegura lo que no puedes permitirte perder (salud, vida, responsabilidad civil).</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">05</span>
+                    <h3>Inversión Pasiva</h3>
+                    <p>Pon el interés compuesto a trabajar mediante fondos indexados globales de bajas comisiones.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">06</span>
+                    <h3>Optimización Fiscal</h3>
+                    <p>Entiende el IRPF y los vehículos de ahorro para que Hacienda no se lleve más de lo legalmente debido.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-num">07</span>
+                    <h3>Número FIRE</h3>
+                    <p>Alcanza el punto donde tus dividendos y rentas cubren el 100% de tus necesidades vitales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="test-salud" class="massive-section bg-card-alt">
+            <div class="section-title">
+                <h2>Auditores de Salud Financiera</h2>
+                <p>Responde 4 datos y obtén un diagnóstico de grado bancario sobre tu situación actual.</p>
+            </div>
+            <div class="card audit-card">
+                <div class="audit-form">
+                    <div class="input-pro"><label>Ingresos Mensuales Netos</label><input type="number" id="tIn" placeholder="Ej. 1800"></div>
+                    <div class="input-pro"><label>Ahorro/Inversión Mensual</label><input type="number" id="tAh" placeholder="Ej. 400"></div>
+                    <div class="input-pro"><label>Cuota Deudas (Mes)</label><input type="number" id="tDe" placeholder="Ej. 0"></div>
+                    <div class="input-pro"><label>Ahorros Totales Disponibles</label><input type="number" id="tLi" placeholder="Ej. 6000"></div>
+                </div>
+                <button class="btn-action" onclick="runFinancialAudit()">Ejecutar Auditoría</button>
+                <div id="audit-result" class="audit-response" style="display:none;">
+                    <div class="score-box">
+                        <div class="score-circle"><span id="resScore">0</span></div>
+                        <div class="score-details">
+                            <h3 id="resMsg">Análisis Finalizado</h3>
+                            <div class="metric-row">Tasa de Ahorro: <strong id="resAh">0%</strong></div>
+                            <div class="metric-row">Meses de Supervivencia: <strong id="resLi">0</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador-crisis" class="massive-section">
+            <div class="section-title">
+                <h2>Simulador de Impacto Histórico</h2>
+                <p>¿Es tu cartera resistente al pánico? Mira qué pasaría con tus ahorros reales en un Crack.</p>
+            </div>
+            <div class="card sim-card">
+                <div class="sim-inputs">
+                    <div class="input-pro">
+                        <label>Tu Capital a Simular (€)</label>
+                        <input type="number" id="simMoney" value="10000">
+                    </div>
+                    <div class="input-pro">
+                        <label>Evento Histórico</label>
+                        <select id="simType">
+                            <option value="crack29">Gran Depresión (1929) - Caída -89%</option>
+                            <option value="dotcom">Burbuja Dotcom (2000) - Caída -78%</option>
+                            <option value="subprime">Crisis Financiera (2008) - Caída -56%</option>
+                            <option value="covid">Pandemia (2020) - Caída -34%</option>
+                        </select>
+                    </div>
+                    <button class="btn-main" onclick="runCrisisSimulation()">Lanzar Simulación</button>
+                </div>
+                <div id="sim-result" class="sim-box-result" style="display:none;">
+                    <div class="res-highlight">
+                        <span>Tu dinero en el punto más bajo:</span>
+                        <strong id="out-money-lost">0 €</strong>
+                    </div>
+                    <p id="out-lesson" class="lesson-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="diccionario" class="massive-section">
+            <div class="section-title">
+                <h2>Enciclopedia del Capital</h2>
+                <p>Navega por más de 60 términos críticos. Haz clic para leer la explicación completa.</p>
+            </div>
+            <div class="dicc-grid" id="main-diccionario">
+                <article class="concept-card" id="tin"><h3>TIN</h3><p>Tipo de Interés Nominal. Porcentaje fijo pactado por el préstamo de dinero.</p></article>
+                <article class="concept-card" id="tae"><h3>TAE</h3><p>Tasa Anual Equivalente. El coste real: incluye TIN, comisiones y gastos bancarios.</p></article>
+                <article class="concept-card" id="euribor"><h3>Euríbor</h3><p>Precio del dinero entre bancos europeos. Base de las hipotecas variables.</p></article>
+                <article class="concept-card" id="inflacion"><h3>Inflación</h3><p>Aumento generalizado de precios que destruye el valor de tu dinero no invertido.</p></article>
+                <article class="concept-card" id="interes-compuesto"><h3>Interés Compuesto</h3><p>Reinversión de intereses que genera crecimiento exponencial en el tiempo.</p></article>
+                <article class="concept-card" id="dca"><h3>DCA</h3><p>Dollar Cost Averaging. Inversión periódica para reducir el impacto de la volatilidad.</p></article>
+                <article class="concept-card" id="per"><h3>PER</h3><p>Price Earnings Ratio. Cuántas veces el beneficio anual está contenido en el precio.</p></article>
+                <article class="concept-card" id="etf"><h3>ETF</h3><p>Fondo cotizado que replica un índice. Permite diversificar con comisiones ínfimas.</p></article>
+                <article class="concept-card" id="broker"><h3>Bróker</h3><p>Intermediario regulado necesario para acceder a la compra-venta de activos.</p></article>
+                <article class="concept-card" id="fire"><h3>FIRE</h3><p>Financial Independence, Retire Early. Movimiento para jubilarse joven.</p></article>
+                <article class="concept-card" id="liquidez"><h3>Liquidez</h3><p>Capacidad de un activo para convertirse en efectivo sin pérdida de valor inmediata.</p></article>
+                <article class="concept-card" id="apalancamiento"><h3>Apalancamiento</h3><p>Uso de deuda para invertir una cantidad mayor a la que poseemos físicamente.</p></article>
+                <article class="concept-card" id="dividendo"><h3>Dividendo</h3><p>Distribución de parte de los beneficios de una empresa a sus accionistas.</p></article>
+                <article class="concept-card" id="pib"><h3>PIB</h3><p>Producto Interior Bruto. Valor total de la producción de un país en un año.</p></article>
+                <article class="concept-card" id="irpf"><h3>IRPF</h3><p>Impuesto sobre la Renta. Es un impuesto progresivo sobre lo que ganas en España.</p></article>
+                <article class="concept-card" id="cisne-negro"><h3>Cisne Negro</h3><p>Evento impredecible de impacto masivo y destructivo (ej: crisis 2008).</p></article>
+                <article class="concept-card" id="hodl"><h3>HODL</h3><p>Estrategia de mantener una inversión a largo plazo ignorando fluctuaciones.</p></article>
+                <article class="concept-card" id="blockchain"><h3>Blockchain</h3><p>Tecnología de registro descentralizado e inmutable que sustenta las criptos.</p></article>
+                <article class="concept-card" id="amortizacion"><h3>Amortización</h3><p>Devolución de una deuda. Puede ser de cuota o de plazo en hipotecas.</p></article>
+                <article class="concept-card" id="recision"><h3>Recesión</h3><p>Caída del PIB durante dos trimestres consecutivos. Frenazo económico.</p></article>
+                <article class="concept-card" id="estanflacion"><h3>Estanflación</h3><p>Inflación alta con crecimiento nulo o negativo. Escenario muy dañino.</p></article>
+                <article class="concept-card" id="fgd"><h3>FGD</h3><p>Fondo de Garantía de Depósitos. Garantiza 100.000€ por banco y titular.</p></article>
+                <article class="concept-card" id="spread"><h3>Spread</h3><p>Diferencia entre el precio de compra (ask) y el precio de venta (bid).</p></article>
+                <article class="concept-card" id="slippage"><h3>Slippage</h3><p>Diferencia entre el precio esperado de una orden y el precio ejecutado real.</p></article>
+                <article class="concept-card" id="renta-fija"><h3>Renta Fija</h3><p>Deuda emitida por estados o empresas con un interés pactado de antemano.</p></article>
+                <article class="concept-card" id="renta-variable"><h3>Renta Variable</h3><p>Acciones donde la rentabilidad depende de los resultados y el mercado.</p></article>
+                <article class="concept-card" id="bull-market"><h3>Bull Market</h3><p>Mercado alcista. Tendencia de subida de precios y optimismo generalizado.</p></article>
+                <article class="concept-card" id="bear-market"><h3>Bear Market</h3><p>Mercado bajista. Caídas sostenidas y pesimismo en los inversores.</p></article>
+                <article class="concept-card" id="capitalizacion"><h3>Capitalización</h3><p>Valor total de mercado de una empresa (Precio x Acciones en circulación).</p></article>
+                <article class="concept-card" id="volatilidad"><h3>Volatilidad</h3><p>Medida de la variabilidad de las rentabilidades de un activo en el tiempo.</p></article>
+				<article class="concept-card" id="reits"><h3>REITs (SOCIMIs)</h3><p>Empresas que poseen y gestionan activos inmobiliarios. Permiten invertir en ladrillo sin comprar un piso físico.</p></article>
+				<article class="concept-card" id="small-caps"><h3>Small Caps</h3><p>Empresas de pequeña capitalización bursátil. Tienen más riesgo, pero un potencial de crecimiento mucho mayor.</p></article>
+				<article class="concept-card" id="blue-chips"><h3>Blue Chips</h3><p>Empresas líderes, consolidadas y financieramente estables que suelen pagar dividendos constantes (ej: Coca-Cola, Inditex).</p></article>
+				<article class="concept-card" id="dividend-yield"><h3>Dividend Yield</h3><p>Rentabilidad por dividendo. Es el porcentaje que representa el dividendo respecto al precio de la acción.</p></article>
+				<article class="concept-card" id="ltv"><h3>LTV (Loan to Value)</h3><p>Relación entre el préstamo y el valor del inmueble. Los bancos suelen financiar hasta un 80% LTV.</p></article>
+				<article class="concept-card" id="fomo"><h3>FOMO</h3><p>Fear Of Missing Out. Miedo a quedarse fuera de una subida del mercado, lo que suele llevar a comprar caro por impulso.</p></article>
+				<article class="concept-card" id="halving"><h3>Halving</h3><p>Evento en Bitcoin donde la recompensa por minar se reduce a la mitad. Ocurre cada 4 años y suele reducir la oferta.</p></article>
+				<article class="concept-card" id="stablecoins"><h3>Stablecoins</h3><p>Criptomonedas vinculadas al valor de una moneda fíat (como el dólar), buscando estabilidad frente a la volatilidad.</p></article>
+				<article class="concept-card" id="capital-gains"><h3>Ganancias de Capital</h3><p>El beneficio obtenido al vender un activo (acciones, casa) por un precio mayor al de compra.</p></article>
+				<article class="concept-card" id="doble-imposicion"><h3>Doble Imposición</h3><p>Cuando un mismo beneficio tributa en dos países distintos. Se evita mediante convenios internacionales.</p></article>
+				<article class="concept-card" id="pensiones"><h3>Planes de Pensiones</h3><p>Vehículos de ahorro a largo plazo cuya principal ventaja es que desgravan en la declaración de la renta actual.</p></article>
+				<article class="concept-card" id="coste-hundido"><h3>Falacia del Coste Hundido</h3><p>Error psicológico de seguir invirtiendo en algo que va mal solo porque ya hemos gastado mucho dinero en ello.</p></article>
+				<article class="concept-card" id="margin-call"><h3>Margin Call</h3><p>Llamada de margen. Cuando el bróker te obliga a meter más dinero porque tu inversión apalancada está cayendo demasiado.</p></article>
+				<article class="concept-card" id="interes-demora"><h3>Interés de Demora</h3><p>Penalización extra que pagas por retrasarte en el pago de una cuota o impuesto.</p></article>
+				<article class="concept-card" id="base-imponible"><h3>Base Imponible</h3><p>La cantidad sobre la que se calcula un impuesto tras aplicar deducciones y mínimos exentos.</p></article>
+				<article class="concept-card" id="rating"><h3>Rating Financiero</h3><p>Nota que agencias (como Moody's) ponen a países o empresas sobre su capacidad para pagar sus deudas.</p></article>
+				<article class="concept-card" id="short-selling"><h3>Venta en Corto</h3><p>Apostar a que una acción va a bajar. Ganas dinero si el precio cae, pero el riesgo de pérdida es ilimitado.</p></article>
+				<article class="concept-card" id="market-maker"><h3>Market Maker</h3><p>Entidades que aseguran que siempre haya alguien comprando o vendiendo un activo para que haya liquidez.</p></article>
+				<article class="concept-card" id="deflacion"><h3>Deflación</h3><p>Caída generalizada de los precios. Suele ser señal de una economía estancada donde nadie consume.</p></article>
+				<article class="concept-card" id="paraiso-fiscal"><h3>Paraíso Fiscal</h3><p>Territorio con impuestos nulos o muy bajos y opacidad bancaria para atraer capitales extranjeros.</p></article>
+				<article class="concept-card" id="ter"><h3>TER (Total Expense Ratio)</h3><p>Ratio de costes totales. Es la comisión real anual que te cobra un fondo de inversión por gestionarlo. Cuanto más bajo, mejor.</p></article>
+				<article class="concept-card" id="nav"><h3>Valor Liquidativo (NAV)</h3><p>El precio unitario de una participación en un fondo de inversión en un momento determinado.</p></article>
+				<article class="concept-card" id="ipc"><h3>IPC (Índice de Precios)</h3><p>Indicador que mide la variación de los precios de la cesta de la compra. Se usa para calcular la inflación oficial.</p></article>
+				<article class="concept-card" id="prima-riesgo"><h3>Prima de Riesgo</h3><p>Diferencia entre el interés que paga un país por su deuda (bonos) comparado con el país más seguro (normalmente Alemania).</p></article>
+				<article class="concept-card" id="activo-refugio"><h3>Activo Refugio</h3><p>Inversiones que suelen mantener o subir su valor cuando los mercados caen por miedo o crisis (ej: Oro, Franco Suizo, Bonos USA).</p></article>
+				<article class="concept-card" id="ebitda"><h3>EBITDA</h3><p>Beneficio antes de intereses, impuestos, depreciaciones y amortizaciones. Mide la capacidad de generar caja de una empresa.</p></article>
+				<article class="concept-card" id="ipo-opa"><h3>IPO / OPA</h3><p>IPO: Cuando una empresa sale a bolsa por primera vez. OPA: Oferta pública para comprar la mayoría de acciones de una empresa ya listada.</p></article>
+				<article class="concept-card" id="moat"><h3>Vantaja Competitiva (Moat)</h3><p>Capacidad de una empresa para mantener ventajas sobre sus competidores y proteger sus beneficios a largo plazo (foso económico).</p></article>
+				<article class="concept-card" id="analisis-fundamental"><h3>Análisis Fundamental</h3><p>Estudio de los balances y datos económicos de una empresa para determinar su valor real, más allá de lo que diga su precio en bolsa.</p></article>
+				<article class="concept-card" id="analisis-tecnico"><h3>Análisis Técnico</h3><p>Estudio de los gráficos de precios y volúmenes pasados para intentar predecir movimientos futuros del mercado.</p></article>
+				<article class="concept-card" id="dacion-pago"><h3>Dación en Pago</h3><p>Entrega de la vivienda al banco para saldar la totalidad de la deuda hipotecaria cuando no se puede pagar.</p></article>
+				<article class="concept-card" id="carencia"><h3>Carencia Hipotecaria</h3><p>Periodo en el que solo se pagan intereses y no se amortiza capital, reduciendo la cuota temporalmente pero encareciendo el total.</p></article>
+				<article class="concept-card" id="subrogacion"><h3>Subrogación</h3><p>Cambiar tu hipoteca de un banco a otro para mejorar las condiciones (tipo de interés, comisiones o plazos).</p></article>
+				<article class="concept-card" id="novacion"><h3>Novación</h3><p>Negociación de las condiciones de la hipoteca con tu propio banco para modificarlas sin cambiar de entidad.</p></article>
+				<article class="concept-card" id="defi"><h3>DeFi</h3><p>Finanzas Descentralizadas. Servicios financieros (préstamos, intercambios) ejecutados por algoritmos en la blockchain, sin bancos.</p></article>
+				<article class="concept-card" id="smart-contracts"><h3>Smart Contracts</h3><p>Contratos inteligentes auto-ejecutables que funcionan en una blockchain cuando se cumplen condiciones programadas.</p></article>
+				<article class="concept-card" id="staking"><h3>Staking</h3><p>Bloquear criptomonedas para apoyar la seguridad de una red blockchain a cambio de recibir recompensas (similar a intereses).</p></article>
+				<article class="concept-card" id="wallet-fria"><h3>Wallet Fría</h3><p>Dispositivo físico para guardar criptomonedas fuera de internet, ofreciendo la máxima seguridad contra hackeos.</p></article>
+				<article class="concept-card" id="interes-real"><h3>Interés Real</h3><p>El interés nominal restándole la inflación. Es lo que realmente ganas o pierdes en capacidad de compra.</p></article>
+				<article class="concept-card" id="perfil-conservador"><h3>Perfil Conservador</h3><p>Inversor que prioriza la seguridad del capital sobre la rentabilidad, aceptando beneficios bajos a cambio de poca volatilidad.</p></article>
+				<article class="concept-card" id="perfil-agresivo"><h3>Perfil Agresivo</h3><p>Inversor que busca rentabilidades altas aceptando grandes caídas temporales y mayor riesgo de pérdida.</p></article>
+				<article class="concept-card" id="correlacion"><h3>Correlación</h3><p>Grado en el que dos inversiones se mueven en la misma dirección. Una buena cartera busca activos con correlación baja.</p></article>
+				<article class="concept-card" id="arbitraje"><h3>Arbitraje</h3><p>Estrategia de comprar un activo en un mercado y venderlo simultáneamente en otro a un precio mayor para ganar la diferencia sin riesgo.</p></article>
+				<article class="concept-card" id="plusvalia"><h3>Plusvalía</h3><p>Incremento del valor de un bien. Solo se convierte en ganancia real cuando se vende el activo.</p></article>
+				<article class="concept-card" id="minusvalia"><h3>Minusvalía</h3><p>Disminución del valor de un activo. Útil fiscalmente para compensar ganancias y pagar menos impuestos.</p></article>
+				<article class="concept-card" id="acciones-fraccionadas"><h3>Acciones Fraccionadas</h3><p>Poder comprar una porción de una acción cara (ej: comprar 10€ de una acción que vale 3.000€).</p></article>
+				<article class="concept-card" id="stop-limit"><h3>Orden Stop-Limit</h3><p>Orden de bolsa que combina un precio de disparo y un precio límite para asegurar que no vendes por debajo de lo deseado.</p></article>
+				<article class="concept-card" id="gap-mercado"><h3>Gap (Hueco)</h3><p>Diferencia de precio entre el cierre de un día y la apertura del siguiente, donde no ha habido negociación intermedia.</p></article>
+				<article class="concept-card" id="apalancamiento-financiero"><h3>Apalancamiento Financiero</h3><p>Ratio que mide la relación entre capital propio y crédito en una operación financiera.</p></article>
+				<article class="concept-card" id="rebalanceo"><h3>Rebalanceo</h3><p>Ajustar periódicamente los pesos de tu cartera para volver a tu estrategia original (ej: vender lo que ha subido mucho para comprar lo que ha bajado).</p></article>
+                </div>
+        </section>
+
+        <section id="calculadoras" class="massive-section bg-card-alt">
+            <div class="section-title">
+                <h2>Terminal de Ingeniería</h2>
+                <p>Matemáticas de precisión para tus decisiones financieras diarias.</p>
+            </div>
+            <div class="grid-tools">
+                <div class="card tool-box">
+                    <h3>⚡ Sueldo Neto 2026</h3>
+                    <label>Bruto Anual (€)</label>
+                    <input type="number" id="bruto" placeholder="24000">
+                    <label>Pagas</label>
+                    <select id="pagas"><option value="12">12</option><option value="14">14</option></select>
+                    <button class="btn-calc" onclick="uiSueldo()">Calcular Neto</button>
+                    <div id="res-sueldo" class="mini-res"></div>
+                </div>
+                <div class="card tool-box">
+                    <h3>📈 Interés Compuesto</h3>
+                    <label>Inversión Inicial (€)</label>
+                    <input type="number" id="capComp" placeholder="1000">
+                    <label>Rentabilidad Anual %</label>
+                    <input type="number" id="intComp" placeholder="7">
+                    <label>Años</label>
+                    <input type="number" id="anosComp" placeholder="20">
+                    <button class="btn-calc" onclick="uiCompuesto()">Proyectar Capital</button>
+                    <div id="res-compuesto" class="mini-res"></div>
+                </div>
+                <div class="card tool-box">
+                    <h3>🏠 Cuota Hipotecaria</h3>
+                    <label>Préstamo (€)</label>
+                    <input type="number" id="hCap" placeholder="150000">
+                    <label>Interés TAE %</label>
+                    <input type="number" id="hInt" placeholder="3.5">
+                    <label>Años</label>
+                    <input type="number" id="hYears" placeholder="30">
+                    <button class="btn-calc" onclick="uiHipoteca()">Ver Mensualidad</button>
+                    <div id="res-hipoteca" class="mini-res"></div>
+                </div>
+            </div>
+        </section>
+
+       <section id="contacto" class="massive-section">
+            <div class="section-title">
+                <h2>Buzón de Desarrollo</h2>
+                <p>Recibimos sugerencias en <strong>finanzaspro26@gmail.com</strong>. Tu feedback mejora la plataforma.</p>
+            </div>
+            <div class="card contact-card">
+                <form id="proForm" onsubmit="handleContact(event)">
+                    <div class="form-grid">
+                        <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                        <select name="Motivo"><option>Propuesta Concepto</option><option>Nueva Herramienta</option><option>Reportar Error</option></select>
+                    </div>
+                    <textarea name="Mensaje" placeholder="Describe tu idea detalladamente..." required></textarea>
+                    <button type="submit" class="btn-action" id="btn-submit-contact">Enviar Propuesta</button>
+                    <p id="success-mail" class="success-msg" style="display:none;">✅ Mensaje enviado. Te contactaremos pronto.</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pro-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">Finanzas<span>Pro</span></div>
+                <p>La enciclopedia financiera más completa de habla hispana. Sin bancos, sin sesgos, solo código.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Navegación</h4>
+                    <a href="#test-salud">Auditoría</a>
+                    <a href="#simulador-crisis">Simulador</a>
+                    <a href="#diccionario">Diccionario</a>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="privacidad.html">Privacidad</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer-area">
+            <strong>ADVERTENCIA:</strong> El contenido de esta web es estrictamente educativo. No constituye asesoramiento financiero. Invertir conlleva riesgo de pérdida de capital. La decisión final es siempre tuya.
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Finanzas Pro | Desarrollado con 100% Código Propio en Almería.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

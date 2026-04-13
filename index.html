@@ -376,5 +376,12 @@
     </footer>
 
     <script src="script.js"></script>
+	<script>
+		const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+		const fechaActual = NewDate();
+		const mes = meses[fechaActual.getMonth()];
+		const año = fechaActual.getFullYear();
+		document.getElementById("fecha-auto").textContent = `${mes} ${año}`;
+	</script>	
 </body>
 </html>
